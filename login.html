@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/all.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <title>FoodTime - Online Food ordering website Landing page</title>
+</head>
+<body>
+    
+
+
+    <!-- Navbar Section  -->
+
+
+    <nav class="nav-area">
+        <div class="nav-container">
+
+            <div class="nav-left">
+                    <a href="index.html"><img src="./assets/image/logo/logo.png" alt=""></a>
+            </div>
+
+            <div class="nav-right">
+                <ul class="nav-liz">
+                    <li><a href="">home</a></li>
+                    <li><a href="">blog</a></li>
+                    <li><a href="">about us</a></li>
+                    <li><a href="">en <img class="dropdown-icon" src="./assets/image/icons/down-arrow-icon.svg" alt=""></a></li>
+                    <li class="login-btn">
+                        <a href="login.html" class="login-link">login</a></li>
+                    <li class="login-btn2">
+                        <a href="signup.html" class="login-link2">signup</a></li>
+                </ul>
+            </div>
+        </div>
+        
+    </nav>
+
+    <!-- Section Login -->
+
+    <section class="login-area">
+        <div class="login-content">
+            <h1>welcome to login area</h1>
+        </div>
+        <form action="action_page.php" method="post">
+           <div class="container">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+          
+              <button type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+          
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" class="cancelbtn">Cancel</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
+    </section>
+</body>
+</html>
