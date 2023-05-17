@@ -15,18 +15,18 @@
         <div class="nav-container">
 
             <div class="nav-left">
-                    <img src="./assets/image/logo/logo.png" alt="">
+                <a href="index.html"><img src="./assets/image/logo/logo.png" alt=""></a>
             </div>
             <div class="nav-right">
                 <ul class="nav-liz">
-                    <li><a href="">home</a></li>
-                    <li><a href="">blog</a></li>
-                    <li><a href="">about us</a></li>
-                    <li><a href="">en <img class="dropdown-icon" src="./assets/image/icons/down-arrow-icon.svg" alt=""></a></li>
-                    <li class="login-btn">
-                        <a href="login.html" class="login-link">login</a></li>
-                        <li class="login-btn2">
-                            <a href="signup.html" class="login-link2">signup</a></li>
+                    <li class="nav-item"><a href="">home</a></li>
+                    <li class="nav-item"><a href="">blog</a></li>
+                    <li class="nav-item"><a href="">about</a></li>
+                    <li class="nav-item"><a href="" class="nav-en"> <span>en</span> 
+                        <img class="dropdown-icon" src="./assets/image/icons/down-arrow-icon.svg" alt=""></a></li>
+                    <li class="login-btn1">
+                        <a href="login.html" >login</a>
+                    </li>
                     </ul>
             </div>
         </div>
@@ -41,16 +41,16 @@
                     <small>Freshly made food delivered to your door <span class="dot-color">.</span></small>
                     <div class="hero-input">
                         <div class="hero-left-input">
-                            <input type="text"  placeholder="Enter your location">
+                            <input type="text" placeholder="Enter your location" id="searchInput">
                             <img class="hero-location-icon" src="./assets/image/icons/location-icon.png" alt="">
                         </div>
                         <div>
-                            <button class="hero-right-input-search" type="submit">Search
+                            <button class="hero-right-input-search" type="submit" id="searchButton">Search
                             <img class="search-icon" src="./assets/image/icons/search-icon.png" alt=""> 
                             </button>
                         </div>
                     </div>
-                </div>
+            </div>
             <div class="hero-right">
                 <img class="one-delivered" src="./assets/image/one.png" alt="">
                 <img class="tree-img" src="./assets/image/tree.png" alt="">
@@ -123,96 +123,98 @@
     <div class="partner-content">
         <p> Want to be a part of Foodtime? </p>
         <span> List your restaurant or shop on foodtime. </span>
-        <button type="submit"> Get started 
+        <button type="submit" id="statedButton"> Get started 
     <img class="partner-btn-icon" src="./assets/image/icons/right-arrow.svg" alt="">
-        </button>
+        </button>        
+    </div>
+    <div id="partnerText">
+        <p> Lorem, ipsum dolor. </p>
     </div>
 </section>
 
 <!-- Section contact -->
-
 <section class="contact-us">
-<div class="contact">
-    <form action="action_page.php" style="border:1px solid #ccc">
-        <div class="container">
-            <label for="yourname"><b>your name</b></label>
-            <input type="text" placeholder="Enter your name" name="your name" required>
+    <div class="contact">
+        <form action="action_page.php" style="border:1px solid #ccc">
+            <div class="container">
+                <label for="yourname"><b>your name</b></label>
+                <input type="text" placeholder="Enter your name" name="your name" required>
+    
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>      
+              <div class="clearfix">
+              </div>
+            </div>
+          <br/> <br/>
+              <label for="Message"> Message </label> <br/>
+              <textarea rows="5" cols="40" id="Message" name="userMessage"></textarea>
+          <button type="submit"> Submit </button>
+        </form>
+        </div>
+    </section>
 
-          <label for="email"><b>Email</b></label>
-          <input type="text" placeholder="Enter Email" name="email" required>
-      
-          <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" required>      
-          <div class="clearfix">
-          </div>
+<!-- Section Pickus -->
+<section class="pickus-area">
+    <div class="pickus-content">
+        <div class="pickus-left">
+            <p>Put us in your pocket</p>
+            <p>Download our appfrom google play or app <br>
+                store and you don't have to be worry about <br> 
+                your food anymore
+            </p>
+            <a href="" class=""><img src="./assets/image/apple_googleplay/App Store Black.png" alt=""></a>
+            <a href="" class=""><img src="./assets/image/apple_googleplay/Google Play Black.png" alt=""></a>
         </div>
-      <br/> <br/>
-          <label for="Message"> Message </label> <br/>
-          <textarea rows="5" cols="40" id="Message" name="userMessage"></textarea>
-      <button type="submit"> Submit </button>
-    </form>
+        <div class="pickus-right">
+            <img src="./assets/image/five.jpg" alt="">
+        </div>
     </div>
 </section>
 
-<!-- Section pocket -->
-<section class="allpoket">
-    <div class="pocket">
-        <div class="container">
-        <h1> Put us in your pocket </h1>
-        <p> Download our app from google play or app store and you don’t have to be worry about your food anymore. </p>
-        <img src="./assets/image/five.jpg" alt="">
-        </div>  
-      </div>
-        </div>
+<!-- Section Footer -->
+<section class="footer-area">
+    <div class="footer-content">
+            <div class="footer-logo-content">
+                <img src="./assets/image/logo/logo2.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                     A harum repellendus porro culpa quaerat ratione dignissimos <br>
+                      error beatae expedita nemo velit, qui nulla, aliquid <br>
+                       possimus neque nobis recusandae delectus voluptas. 
+                       <br>  
+                </p>
+            </div>
+            <div class="footer-links-flex">
+                <div class="footer-quick-links">
+                    <p>Quick links</p>
+                    <ul>
+                        <li class="nav-item2"><a href="">Browse Foodtime</a></li>
+                        <li class="nav-item2"><a href="">Browse Foodtime</a></li>
+                        <li class="nav-item2"><a href="">registeration</a></li>
+                    </ul>
+                </div>
+                <div class="footer-about">
+                    <p>About</p>
+                    <ul>
+                        <li class="nav-item2"><a href="">About us</a></li>
+                        <li class="nav-item2"><a href="">Mission</a></li>
+                        <li class="nav-item2"><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <p>Social</p>
+                    <ul>
+                        <li class="nav-item2"><a href="">Facebook</a></li>
+                        <li class="nav-item2"><a href="">Twitter</a></li>
+                        <li class="nav-item2"><a href="">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
     </div>
+    <p class="footer-copyright">&copy; 2023 Nayeemur R Sakib</p>
 </section>
-    <!-- Section footer -->
-    <section class="footeritem">
-    <div class="footer">
-      <div class="container">
-        <div class="footer-item">
-          <h3> FoodTime </h3>
-          <p class="one">
-            Lorem ipsum dolor sit amet <br/> consectetur. Odio amet natoque tortor convallis. Bibendum sapien <br/> suspendisse ipsum urna malesuada elit. Bibendum <br/> vitae nibh scelerisque sed aliquam ullamcorper est. 
-          </p>
-        </div>
-        <div class="footer-item">
-          <h3> Quick links </h3>
-          <div class="nav-links">
-            <ul>  
-              <li> Browse Foodtime </li>
-              <br/>
-              <li> Browse Food tim </li>
-              <li> Registrations </li>
-              <li class="clearfix"></li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer-item">
-          <h3> About </h3>
-          <div class="nav-links">
-            <ul>
-              <li> About us` </li>
-              <li> Minssion </li>
-              <li> Contact </li>
-              <li class="clearfix"></li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer-item">
-          <h3> Social </h3>
-          <div class="nav-links">
-            <ul>
-              <li> Facebook </li>
-              <li> Twitter </li>
-              <li> Instagram </li>
-              <li class="clearfix"></li>
-            </ul>
-          </div>
-        </div>
-    <div class="clearfix"></div>
-      </div>
-    </div>
-</section>
+<script src="./script.js"></script>
 </body>
 </html>
